@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var backgroundImageView: UIImageView!
 
-    var quotes = Quote()
+    var quotes = Quotes()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         let image = randomImage()
         backgroundImageView.image = image
-        sender.backgroundImage = randomColor
+//        sender.backgroundImage = randomColor()
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,6 +47,5 @@ class ViewController: UIViewController {
         }
     }
     
-   
 }
 
